@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 interface Event {
   id: string;
@@ -23,21 +24,13 @@ const events: Event[] = [
     location: 'Achutha Krishna function hall, Gandhinagar, Gollaprolu',
     dressCode: 'Traditional elegance in cream, gold, or crimson',
     icon: (
-      <svg viewBox="0 0 40 40" className="w-full h-full" fill="currentColor">
-        <path
-          d="M20 5 C10 15, 5 25, 5 32 C5 35, 8 38, 20 38 C32 38, 35 35, 35 32 C35 25, 30 15, 20 5"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-        />
-        <circle cx="20" cy="22" r="6" />
-        <path
-          d="M14 22 Q20 12, 26 22"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-        />
-      </svg>
+      <Image
+        src="/wedding.png"
+        alt="wedding-event"
+        className="w-12"
+        width={10}
+        height={10}
+      />
     ),
   },
   {
@@ -49,21 +42,13 @@ const events: Event[] = [
     location: 'At home',
     dressCode: 'Yellow or ivory traditional wear',
     icon: (
-      <svg viewBox="0 0 40 40" className="w-full h-full" fill="currentColor">
-        <circle
-          cx="20"
-          cy="20"
-          r="18"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-        />
-        <circle cx="20" cy="20" r="8" />
-        <path d="M20 2 L20 10" stroke="currentColor" strokeWidth="2" />
-        <path d="M20 30 L20 38" stroke="currentColor" strokeWidth="2" />
-        <path d="M2 20 L10 20" stroke="currentColor" strokeWidth="2" />
-        <path d="M30 20 L38 20" stroke="currentColor" strokeWidth="2" />
-      </svg>
+      <Image
+        src="/haldi.png"
+        alt="wedding-event"
+        className="w-12"
+        width={10}
+        height={10}
+      />
     ),
   },
   {
@@ -71,26 +56,17 @@ const events: Event[] = [
     title: 'Reception',
     date: 'June 28, 2026',
     time: '12:30 PM',
-    description:
-      'A celebration of love, joy, and delight.',
+    description: 'A celebration of love, joy, and delight.',
     location: 'Kotthem vari funtion hall, Gollaprolu',
     dressCode: 'Indian tradition',
     icon: (
-      <svg viewBox="0 0 40 40" className="w-full h-full" fill="currentColor">
-        <circle
-          cx="20"
-          cy="20"
-          r="18"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-        />
-        <circle cx="20" cy="20" r="8" />
-        <path d="M20 2 L20 10" stroke="currentColor" strokeWidth="2" />
-        <path d="M20 30 L20 38" stroke="currentColor" strokeWidth="2" />
-        <path d="M2 20 L10 20" stroke="currentColor" strokeWidth="2" />
-        <path d="M30 20 L38 20" stroke="currentColor" strokeWidth="2" />
-      </svg>
+      <Image
+        src="/reception.png"
+        alt="wedding-event"
+        className="w-12"
+        width={10}
+        height={10}
+      />
     ),
   },
 ];

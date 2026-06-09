@@ -51,7 +51,7 @@ export function CountdownTimer() {
   ];
 
   return (
-    <section className="mt-5 bg-[rgba(255,250,244,0.86)] border border-[rgba(200,168,112,0.3)] rounded-[22px] p-[0.8rem]">
+    <section className="mt-5 bg-[rgba(255,250,244,0.86)] border border-[rgba(200,168,112,0.3)] rounded-[22px] p-3 sm:p-4">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -59,10 +59,9 @@ export function CountdownTimer() {
         viewport={{ once: true }}
         className="text-center mb-2"
       >
-        <p className="text-sm tracking-[0.3em] text-[#c9a227] uppercase">
+        <p className="text-xs sm:text-sm tracking-[0.3em] text-[#c9a227] uppercase">
           Countdown
         </p>
-  
       </motion.div>
 
       <motion.div
@@ -70,7 +69,7 @@ export function CountdownTimer() {
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6, delay: 0.2 }}
         viewport={{ once: true }}
-        className="flex justify-center gap-4 md:gap-8"
+        className="flex justify-center gap-2 sm:gap-4 md:gap-8"
       >
         {timeUnits.map((unit, index) => (
           <motion.div
@@ -79,17 +78,17 @@ export function CountdownTimer() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: 0.1 * index }}
             viewport={{ once: true }}
-            className="flex flex-col items-center"
+            className="flex flex-col items-center flex-1 min-w-0 max-w-[72px] sm:max-w-[96px]"
           >
             <div
-              className="w-16 h-16 md:w-24 md:h-24 rounded-xl flex items-center justify-center text-primary-foreground text-2xl md:text-4xl font-bold shadow-lg"
+              className="w-full aspect-square rounded-xl flex items-center justify-center text-primary-foreground text-xl sm:text-2xl md:text-4xl font-bold shadow-lg"
               style={{
                 background: 'linear-gradient(135deg, #800020 0%, #a02040 100%)',
               }}
             >
               {String(unit.value).padStart(2, '0')}
             </div>
-            <p className="mt-2 text-xs md:text-sm text-muted-foreground tracking-wider uppercase">
+            <p className="mt-1.5 text-[10px] sm:text-xs md:text-sm text-muted-foreground tracking-wider uppercase">
               {unit.label}
             </p>
           </motion.div>

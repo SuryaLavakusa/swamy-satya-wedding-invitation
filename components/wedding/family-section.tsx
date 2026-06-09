@@ -49,8 +49,8 @@ export function FamilySection() {
             <p className="text-sm tracking-[0.2em] text-[#c9a227] uppercase mb-4">
               {"Bride's Family"}
             </p>
-            <h3 className="text-2xl text-[#800020] font-semibold mb-2">Mr. Katta Srinivas</h3>
-            <h3 className="text-2xl text-[#800020] font-semibold mb-4">Mrs. prabhavati</h3>
+            <h3 className="text-2xl text-[#800020] font-semibold mb-2">Mr. Katta Srinivas Rao</h3>
+            <h3 className="text-2xl text-[#800020] font-semibold mb-4">Mrs. Prabhavati</h3>
             <p className="text-muted-foreground italic">
               {"With blessings from Satya's family"}
             </p>

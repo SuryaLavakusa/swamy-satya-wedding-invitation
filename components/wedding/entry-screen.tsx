@@ -36,17 +36,17 @@ export function EntryScreen({ onEnter }: { onEnter: () => void }) {
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="relative z-10 text-center px-8"
+            className="relative z-10 text-center px-6 sm:px-8 w-full max-w-sm sm:max-w-md mx-auto"
           >
             {/* Ganesh */}
             <motion.div
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
-              className="mb-6"
+              className="mb-4 sm:mb-6 flex justify-center"
             >
               <img
-                className="hero-ganesh"
+                className="hero-ganesh sm:w-28 sm:h-28 object-contain w-75 h-75"
                 alt="Ganesh"
                 src="bg-ganesh-Doltar5t.png"
               />
@@ -56,7 +56,7 @@ export function EntryScreen({ onEnter }: { onEnter: () => void }) {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.6 }}
-              className="text-sm tracking-[0.3em] text-[#800020] uppercase mb-4"
+              className="text-xs sm:text-sm tracking-[0.3em] text-[#800020] uppercase mb-2 sm:mb-4"
             >
               Chandina's
             </motion.p>
@@ -65,7 +65,7 @@ export function EntryScreen({ onEnter }: { onEnter: () => void }) {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.7 }}
-              className="text-sm tracking-[0.3em] text-[#800020] uppercase mb-4"
+              className="text-xs sm:text-sm tracking-[0.3em] text-[#800020] uppercase mb-3 sm:mb-4"
             >
               Wedding Invitation
             </motion.p>
@@ -74,7 +74,7 @@ export function EntryScreen({ onEnter }: { onEnter: () => void }) {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.8 }}
-              className="text-5xl md:text-7xl text-[#800020] mb-2"
+              className="text-4xl sm:text-5xl md:text-7xl text-[#800020] mb-1 sm:mb-2"
               style={{ fontFamily: 'var(--font-great-vibes), cursive' }}
             >
               Swamy
@@ -84,7 +84,7 @@ export function EntryScreen({ onEnter }: { onEnter: () => void }) {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 1 }}
-              className="text-xl text-[#c9a227] tracking-widest mb-2"
+              className="text-base sm:text-xl text-[#c9a227] tracking-widest mb-1 sm:mb-2"
             >
               weds
             </motion.p>
@@ -93,7 +93,7 @@ export function EntryScreen({ onEnter }: { onEnter: () => void }) {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.2 }}
-              className="text-5xl md:text-7xl text-[#800020] mb-8"
+              className="text-4xl sm:text-5xl md:text-7xl text-[#800020] mb-5 sm:mb-8"
               style={{ fontFamily: 'var(--font-great-vibes), cursive' }}
             >
               Satya
@@ -103,7 +103,7 @@ export function EntryScreen({ onEnter }: { onEnter: () => void }) {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 1.4 }}
-              className="text-muted-foreground mb-8"
+              className="text-sm sm:text-base text-muted-foreground mb-5 sm:mb-8"
             >
               Friday, June 26, 2026 • 8:49 PM
             </motion.p>
@@ -115,7 +115,7 @@ export function EntryScreen({ onEnter }: { onEnter: () => void }) {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={handleEnter}
-              className="px-10 py-4 rounded-full text-primary-foreground font-medium tracking-wide transition-all shadow-lg"
+              className="px-8 sm:px-10 py-3 sm:py-4 rounded-full text-primary-foreground text-sm sm:text-base font-medium tracking-wide transition-all shadow-lg"
               style={{
                 background: 'linear-gradient(135deg, #800020 0%, #a02040 100%)',
               }}
@@ -128,18 +128,18 @@ export function EntryScreen({ onEnter }: { onEnter: () => void }) {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.8 }}
-              className="mt-8"
+              className="mt-6 sm:mt-8"
             >
               <div className="flex items-center justify-center gap-4">
-                <div className="w-16 h-[1px] bg-gradient-to-r from-transparent to-[#c9a227]" />
+                <div className="w-12 sm:w-16 h-[1px] bg-gradient-to-r from-transparent to-[#c9a227]" />
                 <svg
-                  className="w-6 h-6 text-[#c9a227]"
+                  className="w-5 h-5 sm:w-6 sm:h-6 text-[#c9a227]"
                   viewBox="0 0 24 24"
                   fill="currentColor"
                 >
                   <path d="M12 2L9 9L2 12L9 15L12 22L15 15L22 12L15 9L12 2Z" />
                 </svg>
-                <div className="w-16 h-[1px] bg-gradient-to-l from-transparent to-[#c9a227]" />
+                <div className="w-12 sm:w-16 h-[1px] bg-gradient-to-l from-transparent to-[#c9a227]" />
               </div>
             </motion.div>
           </motion.div>
